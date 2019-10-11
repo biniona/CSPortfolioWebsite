@@ -111,11 +111,51 @@ main {
   text-align: center;
 }
 
-iframe {
-  width : 75%;
-  height : 500px;
-  border: none;
+.flexContent {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 5px;
+  /*max-height: 75%;*/
+  max-width: 80%;
+  margin : auto;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
+
+.projectHeader{
+  width : 100%;
+}
+.sculptureVisual{
+  width: 38%;
+  padding : 5px;
+  float : left;
+}
+
+.armSculptVisual{
+  height : 400px;
+  width : 500px;
+}
+
+.sculptureImage{
+  max-width:100%
+}
+
+figure {
+  width: 100%;
+  display: inline-block;
+  /*border: 1px dotted gray;*/
+  /*margin: 20px; !* adjust as needed *!*/
+}
+figure img {
+  vertical-align: top;
+}
+figure figcaption {
+  /*border: 1px dotted blue;*/
+  text-align: center;
+}
+
 /*END MAIN CONTENT CSS====================*/
 
 
