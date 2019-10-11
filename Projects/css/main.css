@@ -111,39 +111,10 @@ main {
   text-align: center;
 }
 
-.flexContent {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-style: solid;
-  border-radius: 5px;
-  max-height: 75%;
-  max-width: 75%;
-  margin : auto;
-  overflow: hidden;
-}
-
-.portrait {
-  float: left;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  width: 25%;
-  height: 25%;
-  padding: 5px;
-  margin : auto 20px auto 20px;
-  background-color: cornflowerblue;
-}
-
-.aboutMe #header{
-  font-size: 2.5vw;
-  text-align: left
-}
-.aboutMe #body{
-  text-align: left;
-  flex-wrap: wrap;
-  font-size: 2vw;
-  padding : 10px;
+iframe {
+  width : 75%;
+  height : 500px;
+  border: none;
 }
 /*END MAIN CONTENT CSS====================*/
 
@@ -245,9 +216,9 @@ main {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 

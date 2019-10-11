@@ -1,0 +1,86 @@
+/*BEGIN NAVIGATION MENU CSS======================================*/
+@media screen and (min-width: 500px) {
+  nav {
+    background-color: cornflowerblue;
+    overflow: hidden;
+  }
+  nav .left {
+    float: left;
+  }
+
+  .navLink {
+    text-align: center;
+    padding: 20px;
+    display: block;
+    color: white;
+    font-size: 2.5vw;
+    text-decoration: none;
+  }
+
+  .navListElem:hover:not(.active) {
+    background-color: #408fbd;
+  }
+
+  nav .right * {
+    float: right
+  }
+
+  .menu-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .menu-right li {
+    float: left;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  nav {
+    background-color: cornflowerblue;
+    overflow: hidden;
+  }
+  nav .left {
+    float: left;
+  }
+
+  .navLink {
+    text-align: center;
+    padding: 20px;
+    display: block;
+    color: white;
+    font-size: 2.5vw;
+    text-decoration: none;
+  }
+
+  .navListElem:hover:not(.active) {
+    background-color: #408fbd;
+  }
+
+  nav .right * {
+    float: right
+  }
+
+  .menu-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .menu-right li {
+    float: left;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/*END NAVIGATION MENU CSS========================================*/
