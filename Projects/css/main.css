@@ -104,49 +104,70 @@ body {
 
 /*BEGIN MAIN CONTENT CSS==================*/
 
-
-
 main {
   padding : 20px 20px 80px 20px;
   text-align: center;
 }
 
+#Projects {
+  text-align: left;
+  font-size: 4.5vw;
+}
+
+.superHeader{
+  font-size: 3.75vw;
+}
+
+.superContainer {
+  border-style: solid;
+  border-color: #b3d4fc;
+  border-radius: 5px;
+  margin : 0px 0px 20px 0px;
+}
+
 .flexContent {
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
   border-style: solid;
-  border-radius: 5px;
+  border-color: #95a6ba;
+  border-radius: 1px;
   /*max-height: 75%;*/
   max-width: 80%;
-  margin : auto;
+  padding: 0 0 20px 0 ;
+  margin : 30px auto 30px auto;
   flex-wrap: wrap;
   overflow: hidden;
+}
+
+
+
+.projectText{
+  color: #303030;
+  font-style: italic;
+  font-size: 1.75vw;
+  text-decoration: none;
 }
 
 .projectHeader{
   width : 100%;
 }
+
+/*THIS SECTION HANDLES THE STYLING FOR THE SCULPTURE PROJECT*/
+
 .sculptureVisual{
-  width: 38%;
-  padding : 5px;
+  width : 38%;
   float : left;
 }
 
-.armSculptVisual{
-  height : 400px;
-  width : 500px;
-}
-
 .sculptureImage{
-  max-width:100%
+  width : 100%
 }
 
 figure {
   width: 100%;
   display: inline-block;
-  /*border: 1px dotted gray;*/
-  /*margin: 20px; !* adjust as needed *!*/
 }
 figure img {
   vertical-align: top;
@@ -154,6 +175,16 @@ figure img {
 figure figcaption {
   /*border: 1px dotted blue;*/
   text-align: center;
+}
+
+
+
+/*THIS SECTION HANDLES ARM SCULPT SECTION OF PROJECTS PAGE
+THERE WERE SCALING ISSUES SO I USED AN 8X5 IMAGE TO SIZE THE DIV FOR THE
+8X5 IFRAME*/
+
+#armImageFix{
+  width: 75%;
 }
 
 /*END MAIN CONTENT CSS====================*/

@@ -1,0 +1,34 @@
+/*The image fix styling handles always display 8:5 resolution
+Youtube videos in 8:5. It does this by mapping the youtube IFrames
+over a clear 8:5 image which's width is definied in main.css*/
+
+/*BEGIN IMAGE FIX CSS CODE*/
+
+.imageFix{
+  position: relative;
+  height : 100%;
+}
+
+/*the clear container should be in "clearContainer" class*/
+.clearContainer{
+  /*height: 100%;*/
+  width: 100%;
+  object-fit: contain;
+}
+
+/*IFrame should be in an inner class*/
+.inner {
+  position : absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*Iframe should have imageFix content as class */
+.imageFixContent{
+  height : 100%;
+  width : 100%;
+}
+
+/*END IMAGE FIX CSS CODE*/
