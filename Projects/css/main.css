@@ -104,6 +104,7 @@ body {
 
 /*BEGIN MAIN CONTENT CSS==================*/
 
+/*BEGIN GENERAL PAGE STYLING*/
 main {
   padding : 20px 20px 80px 20px;
   text-align: center;
@@ -132,20 +133,20 @@ main {
   justify-content: center;
   border-style: solid;
   border-color: #95a6ba;
-  border-radius: 1px;
+  border-radius: 7px;
   /*max-height: 75%;*/
   max-width: 80%;
   padding: 0 0 20px 0 ;
   margin : 30px auto 30px auto;
   flex-wrap: wrap;
   overflow: hidden;
+  background-color: #c8eaff;
 }
-
 
 
 .projectText{
   color: #303030;
-  font-style: italic;
+  /*font-style: oblique;*/
   font-size: 1.75vw;
   text-decoration: none;
 }
@@ -154,11 +155,22 @@ main {
   width : 100%;
 }
 
-/*THIS SECTION HANDLES THE STYLING FOR THE SCULPTURE PROJECT*/
+/*BEGIN STYLING FOR INDEPENDENT PROJECTS*/
 
-.sculptureVisual{
-  width : 38%;
-  float : left;
+/*BEGIN STYLING FOR THE SCULPTURE PROJECT*/
+@media screen and (min-width: 700px) {
+  .sculptureVisual {
+    width: 38%;
+    float: left;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .sculptureVisual {
+    width: 80%;
+    float: left;
+    margin: 20px;
+  }
 }
 
 .sculptureImage{
@@ -176,22 +188,23 @@ figure figcaption {
   /*border: 1px dotted blue;*/
   text-align: center;
 }
-
-
-
-/*THIS SECTION HANDLES ARM SCULPT SECTION OF PROJECTS PAGE
-THERE WERE SCALING ISSUES SO I USED AN 8X5 IMAGE TO SIZE THE DIV FOR THE
-8X5 IFRAME*/
-
+/*THIS SECTION HANDLES ARM SCULPT SECTION OF PROJECTS PAGE*/
 #armImageFix{
   width: 75%;
 }
-
+/*===========END INDEPENDENT PROJECT=================================================*/
+/*=========BEGIN CIVIC============*/
+#bwpImage{
+  width : 80%;
+  padding : 0 0 20px 0;
+}
+/*==========END CIVIC=============*/
+/*=====BEGIN COURSEWORK=========*/
+.courseWork{
+  text-align: left;
+  font-size : 2.5vw;
+}
 /*END MAIN CONTENT CSS====================*/
-
-
-
-
 
 /* ==========================================================================
    Helper classes
