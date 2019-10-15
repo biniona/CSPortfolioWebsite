@@ -111,40 +111,103 @@ main {
   text-align: center;
 }
 
-.flexContent {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-style: solid;
-  border-radius: 5px;
-  max-height: 75%;
-  max-width: 75%;
-  margin : auto;
-  overflow: hidden;
+@media screen and (min-width: 600px) {
+  .flexContent {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 5px;
+    max-height: 75%;
+    max-width: 75%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .aboutMe #header{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    text-align: left
+  }
+  .aboutMe #body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 2vw;
+    padding : 10px;
+  }
+
+  .portrait {
+    float: left;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+    margin : auto 20px auto 20px;
+    /*background-color: cornflowerblue;*/
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(237,236,100,0.6969975490196079) 0%, rgba(100,149,237,1) 100%);
+  }
+}
+@media screen and (max-width: 599px) {
+  .flexContent {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    border-style: solid;
+    border-radius: 5px;
+    max-height: 95%;
+    max-width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+
+  .aboutMe #header{
+    float : left;
+    display:inline-block;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 6.2vw;
+    text-align: left;
+  }
+  .aboutMe #body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 3vw;
+    padding : 10px;
+  }
+
+  .portrait {
+    float: left;
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    margin : auto 20px auto 20px;
+    /*background-color: cornflowerblue;*/
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(237,236,100,0.6969975490196079) 0%, rgba(100,149,237,1) 100%);
+  }
 }
 
-.portrait {
-  float: left;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  width: 25%;
-  height: 25%;
-  padding: 5px;
-  margin : auto 20px auto 20px;
-  background-color: cornflowerblue;
-}
 
-.aboutMe #header{
-  font-size: 2.5vw;
-  text-align: left
-}
-.aboutMe #body{
-  text-align: left;
-  flex-wrap: wrap;
-  font-size: 2vw;
-  padding : 10px;
-}
+
+/*.aboutMe #header{*/
+/*  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;*/
+/*  text-transform: uppercase;*/
+/*  font-size: 2.5vw;*/
+/*  text-align: left*/
+/*}*/
+/*.aboutMe #body{*/
+/*  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;*/
+/*  text-align: left;*/
+/*  flex-wrap: wrap;*/
+/*  font-size: 2vw;*/
+/*  padding : 10px;*/
+/*}*/
 /*END MAIN CONTENT CSS====================*/
 
 

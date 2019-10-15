@@ -110,20 +110,40 @@ main {
   text-align: center;
 }
 
-#Projects {
+
+#Projects, #gitHub{
   text-align: left;
+}
+
+#Projects {
   font-size: 4.5vw;
+}
+
+#gitHub{
+  font-size: 3.0vw;
 }
 
 .superHeader{
   font-size: 3.75vw;
 }
 
-.superContainer {
-  border-style: solid;
-  border-color: #b3d4fc;
-  border-radius: 5px;
-  margin : 0px 0px 20px 0px;
+@media screen and (min-width: 600px) {
+  .superContainer {
+    border-style: solid;
+    border-color: #b3d4fc;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .superContainer {
+    border-style: solid;
+    border-color: #b3d4fc;
+    border-radius: 5px;
+    width: 98%;
+    margin: 0 auto 20px auto;
+  }
 }
 
 .flexContent {
@@ -143,17 +163,42 @@ main {
   background-color: #c8eaff;
 }
 
+/*============TEXT STYLING====================*/
 
 .projectText{
   color: #303030;
   /*font-style: oblique;*/
-  font-size: 1.75vw;
-  text-decoration: none;
+  font-size: 2vw;
+  /*text-decoration: none;*/
 }
 
 .projectHeader{
   width : 100%;
 }
+
+
+#Projects, #gitHub, .superHeader, .projectHeader, .projectText{
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#Projects, .superHeader, .projectHeader{
+  text-transform: uppercase;
+}
+
+figure {
+  width: 100%;
+  display: inline-block;
+}
+figure img {
+  vertical-align: top;
+}
+figure figcaption {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  /*border: 1px dotted blue;*/
+  text-align: center;
+}
+
+
 
 /*BEGIN STYLING FOR INDEPENDENT PROJECTS*/
 
@@ -177,17 +222,6 @@ main {
   width : 100%
 }
 
-figure {
-  width: 100%;
-  display: inline-block;
-}
-figure img {
-  vertical-align: top;
-}
-figure figcaption {
-  /*border: 1px dotted blue;*/
-  text-align: center;
-}
 /*THIS SECTION HANDLES ARM SCULPT SECTION OF PROJECTS PAGE*/
 #armImageFix{
   width: 75%;
