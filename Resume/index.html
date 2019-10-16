@@ -13,7 +13,8 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-<!--  TODO: LOGICALLY GROUP THESE STYLE SHEETS WITH THE FOOTER AND NAV-->
+  <link rel="stylesheet" href="/CSPortfolioWebsite/css/imageFix/imageFix.css">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -25,7 +26,14 @@
   <!-- MAIN SITE CODE -->
   <div id = "buildHeader"></div>
   <main>
-    <iframe src="resumes/2-AlekBinionResume19August.pdf"></iframe>
+    <div id = "pdfImageFix" class = "imageFix">
+      <img class = "clearContainer" src="/CSPortfolioWebsite/css/imageFix/clear85by110.png" alt = "">
+      <div class = "inner">
+        <object class = "imageFixContent" id = "pdfObject" data="resumes/2-AlekBinionResume19August.pdf" type="application/pdf">
+          <iframe class = "imageFixContent" src="https://docs.google.com/viewer?url=resumes/2-AlekBinionResume19August.pdf&embedded=true"></iframe>
+        </object>
+      </div>
+    </div>
   </main>
   <div id = "buildFooter"></div>
 

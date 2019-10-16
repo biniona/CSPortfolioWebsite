@@ -111,10 +111,10 @@ main {
   text-align: center;
 }
 
-iframe {
+/*iframe {*/
+#pdfImageFix {
   width : 75%;
-  height : 500px;
-  border: none;
+  margin : 0 auto 0 auto;
 }
 /*END MAIN CONTENT CSS====================*/
 
