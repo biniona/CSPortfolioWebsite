@@ -111,15 +111,34 @@ main {
   text-align: center;
 }
 
+
+
 /*iframe {*/
 @media (min-width: 600px) and (min-device-width : 600px) {
+
+  #brokenPDF{
+    display: inline-block;
+    float:left;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.75vw;
+  }
+
   #pdfImageFix {
+    display: inline-block;
     width: 75%;
     margin: 0 auto 0 auto;
   }
 }
 @media (max-width: 599px), (max-device-width: 599px) {
+  #brokenPDF{
+    display: inline-block;
+    float:left;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 3.5vw;
+  }
+
   #pdfImageFix {
+    display: inline-block;
     width: 95%;
     margin: 0 auto 0 auto;
   }
