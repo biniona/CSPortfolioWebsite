@@ -127,7 +127,7 @@ main {
   font-size: 3.75vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (min-device-width : 600px)  {
   .superContainer {
     border-style: solid;
     border-color: #b3d4fc;
@@ -136,7 +136,7 @@ main {
     margin: 0 auto 20px auto;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px), (max-device-width: 599px) {
   .superContainer {
     border-style: solid;
     border-color: #b3d4fc;
@@ -203,14 +203,14 @@ figure figcaption {
 /*BEGIN STYLING FOR INDEPENDENT PROJECTS*/
 
 /*BEGIN STYLING FOR THE SCULPTURE PROJECT*/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (min-device-width: 700px) {
   .sculptureVisual {
     width: 38%;
     float: left;
     margin: 20px;
   }
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 699px), (max-device-width : 699px) {
   .sculptureVisual {
     width: 80%;
     float: left;
