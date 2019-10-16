@@ -112,9 +112,17 @@ main {
 }
 
 /*iframe {*/
-#pdfImageFix {
-  width : 75%;
-  margin : 0 auto 0 auto;
+@media (min-width: 600px) and (min-device-width : 600px) {
+  #pdfImageFix {
+    width: 75%;
+    margin: 0 auto 0 auto;
+  }
+}
+@media (max-width: 599px), (max-device-width: 599px) {
+  #pdfImageFix {
+    width: 95%;
+    margin: 0 auto 0 auto;
+  }
 }
 /*END MAIN CONTENT CSS====================*/
 

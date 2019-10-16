@@ -165,13 +165,22 @@ main {
 
 /*============TEXT STYLING====================*/
 
-.projectText{
-  color: #303030;
-  /*font-style: oblique;*/
-  font-size: 2vw;
-  /*text-decoration: none;*/
+@media screen and (min-width: 600px) and (min-device-width: 600px) {
+  .projectText {
+    color: #303030;
+    /*font-style: oblique;*/
+    font-size: 2vw;
+    /*text-decoration: none;*/
+  }
 }
-
+@media screen and (max-width: 599px), (max-device-width : 599px) {
+  .projectText {
+    color: #303030;
+    /*font-style: oblique;*/
+    font-size: 4vw;
+    /*text-decoration: none;*/
+  }
+}
 .projectHeader{
   width : 100%;
 }
@@ -236,7 +245,7 @@ figure figcaption {
 /*=====BEGIN COURSEWORK=========*/
 .courseWork{
   text-align: left;
-  font-size : 2.5vw;
+  /*font-size : 2.5vw;*/
 }
 /*END MAIN CONTENT CSS====================*/
 
