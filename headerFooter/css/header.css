@@ -31,7 +31,7 @@ nav .right * {
   display: none;
 }
 
-@media screen and (min-width: 600px) and (min-device-width : 600px) {
+@media (min-width: 600px) and (min-device-width : 600px) {
 
   .navLink {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -46,7 +46,7 @@ nav .right * {
 
 
 }
-@media screen and (max-width: 599px), (max-device-width: 599px) {
+@media (max-width: 599px), (max-device-width: 599px) {
   .navLink {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     text-transform: uppercase;
